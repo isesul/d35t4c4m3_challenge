@@ -1,6 +1,12 @@
 
-
-
+Makefile:
+```
+install              Install dependencies
+deploy               Deploy project (migrate database)
+run                  Run project server development
+createuser           Create user (as superuser)
+createdefaultuser    Create user default (as superuser)
+```
 
 ## Features:
 - [ ] permitir que se ingresen diversos trayectos.
