@@ -8,6 +8,8 @@ createuser           Create user (as superuser)
 createdefaultuser    Create user default (as superuser)
 ```
 
+# Challenge
+
 ## Features:
 - [ ] permitir que se ingresen diversos trayectos.
 - [ ] Cada trayecto tendrá varios buses asignados a distintos horarios.
@@ -24,4 +26,32 @@ createdefaultuser    Create user default (as superuser)
 - [ ] Para la implementación hay que utilizar el Django y su ORM.
 
 ## Restrictions
-- [x] Utilizar Vue.js, Django APIRest Framework.
+- [ ] Utilizar Vue.js, Django APIRest Framework.
+
+# Todo
+
+## Features definition
+
+### Administrative functions
+- [A1]: CRUD travel routes
+- [A2]: CRUD buses
+- [A3]: CRUD bus drivers
+- [A4]: CRUD passengers
+- [A5]: Assign driver to bus
+- [A6]: Assign passengers to travel
+
+
+### Public functions
+- [B1]: Buy tickets
+- [B2]: Sell tickets
+- [B3]: Can list routes with their average passengers number.
+- [B4]: Filter buses on a route with more than a certain N% (percentage number) of their capacity sold.
+
+## Role definition
+- Admin: 
+    - Can: All
+- TicketSeller:
+    - Can: A6, B2, B3, B4
+- Passenger
+    - Can: B1
+

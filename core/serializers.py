@@ -60,8 +60,30 @@ class TravelSerializer(ModelSerializer):
         fields = "__all__"
 
 
+
+USER_FIELDS = (
+        'id', 
+        'username', 
+        'first_name', 
+        'last_name', 
+        'email', 
+        'date_joined', 
+        'name', 
+        'profile', 
+        'identification_type', 
+        'identification_number', 
+        'created_at', 
+        'modify_at', 
+    )
+
 class UserSerializer(ModelSerializer):
     class Meta:
         model = User
         depth = 2
-        fields = "__all__"
+        fields = USER_FIELDS
+
+class DriverSerializer(ModelSerializer):
+    class Meta:
+        model = User
+        depth = 2
+        fields = USER_FIELDS
